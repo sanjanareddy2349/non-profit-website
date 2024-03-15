@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpAge India</title>
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding-bottom: 100px; /* To prevent footer overlap */
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px; /* Increased margin */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .donation-section {
+            text-align: center;
+            margin-bottom: 40px; /* Increased margin */
+        }
+        .donation-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .donation-button:hover {
+            background-color: #0056b3;
+        }
+        .volunteer-form {
+            margin-top: 40px; /* Increased margin */
+            text-align: center;
+        }
+        .volunteer-form input[type="text"],
+        .volunteer-form input[type="email"],
+        .volunteer-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .volunteer-form input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .volunteer-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            nav {
+                display: block;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HelpAge India</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Programs</a>
+        <a href="#">Get Involved</a>
+        <a href="#">Donate</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/the-elderly-may7-1_647_042718011551.jpg?size=690:388/800x400/800x400" alt="HelpAge India">
+        </div>
+        <div class="section-title">
+            <h2>Our Programs</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Elderly Healthcare</h3>
+                <p>Providing medical care and support for elderly citizens.</p>
+            </div>
+            <div class="card">
+                <h3>Old Age Homes</h3>
+                <p>Creating safe and comfortable living spaces for the elderly.</p>
+            </div>
+            <div class="card">
+                <h3>Community Outreach</h3>
+                <p>Engaging with local communities to raise awareness and support.</p>
+            </div>
+            <!-- Add more program cards as needed -->
+        </div>
+        <div class="donation-section">
+            <h2><br>
+
+Support Our Cause</h2>
+            <p>
+
+<br>
+HelpAge India relies on your donations to continue its work. Make a difference today!</p>
+            <br>
+<button class="donation-button">Donate Now</button>
+        </div>
+        <div class="volunteer-form">
+            <h2>Volunteer with Us<br></h2>
+            <form action="#">
+               <br> <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="social-media">
+            <h2>Connect with Us</h2>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://twitter.com/?lang=en">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+<a href="https://www.helpageindia.org/donate/?utm_source=google&utm_medium=cpc&utm_campaign=brandkeywords&gclid=Cj0KCQjwwMqvBhCtARIsAIXsZpam5hdUrxvZW7eaQjq1R1BOvLYY2uoWEOyZduM6ITIGBuSlE0-3t84aAjj2EALw_wcB">HelpAge India</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Contact us: helpage@gmail.com | Phone: +91-1234567890</p>
+    </footer>
+</body>
+</html>
